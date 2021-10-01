@@ -8,9 +8,13 @@ create table jogadores(
 	id int not null auto_increment,
     id_position int not null,
 	nome varchar(30) not null,
-	posição varchar(20) not null,
+	nome varchar(30) not null,
+	nome varchar(30) not null,
+	nome varchar(30) not null,
+	nome varchar(30) not null,
+	--posição varchar(20) not null,
 	nascimento date,
-	altura decimal(3,2),
+	--altura decimal(3,2),
 	primary key(id),
     foreign key(id_position) references position_(id_position)
 )default charset = utf8;
@@ -21,3 +25,14 @@ nome_position varchar(20) not null,
 qtd_jogadores int(30) not null,
 primary key(id_position)
 );
+
+
+--CPF
+
+--É federado? Se sim, qual foi o seu último clube? *
+--Nome do responsável: *
+--Número do RG do responsável: *
+--Telefone do responsável: *
+--E-mail para contato: *
+
+--peneira para jogadores entrarem no clube
