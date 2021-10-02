@@ -8,8 +8,8 @@ create table jogadores(
 	id int not null auto_increment,
     id_position int not null,
 	federado varchar(50) not null,
-	nome_Responsavel varchar(30) not null,
-	rg_Responsavel varchar(30) not null,
+	nome_responsavel varchar(30) not null,
+	rg_responsavel varchar(15) not null,
 	telefone_resposavel varchar(20) not null,
 	email varchar(30) not null,
 	--posição varchar(20) not null,
@@ -22,7 +22,7 @@ create table jogadores(
 create table position_(
 id_position int not null auto_increment,
 nome_position varchar(20) not null,
-qtd_jogadores int(30) not null,
+--qtd_jogadores int(30) not null, QUal a necessidade ?
 posição varchar(20) not null,
 primary key(id_position)
 );
