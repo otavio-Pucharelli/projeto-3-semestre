@@ -7,11 +7,11 @@ use teste_ness;
 create table jogadores(
 	id int not null auto_increment,
     id_position int not null,
-	nome varchar(30) not null,
-	nome varchar(30) not null,
-	nome varchar(30) not null,
-	nome varchar(30) not null,
-	nome varchar(30) not null,
+	federado varchar(50) not null,
+	nome_Responsavel varchar(30) not null,
+	rg_Responsavel varchar(30) not null,
+	telefone_resposavel varchar(20) not null,
+	email varchar(30) not null,
 	--posição varchar(20) not null,
 	nascimento date,
 	--altura decimal(3,2),
@@ -23,6 +23,7 @@ create table position_(
 id_position int not null auto_increment,
 nome_position varchar(20) not null,
 qtd_jogadores int(30) not null,
+posição varchar(20) not null,
 primary key(id_position)
 );
 
