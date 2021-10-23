@@ -6,25 +6,27 @@ use teste_ness;
 
 create table jogadores(
 	id int not null auto_increment,
-    id_position int not null,
-	federado varchar(50) not null,
-	nome_responsavel varchar(30) not null,
-	rg_responsavel varchar(15) not null,
-	telefone_resposavel varchar(20) not null,
+    id_posicao int not null,
+	federado varchar(50) not null, --sim ou não?
+	clube_federado varchar(100) null,
+	nome varchar(40) not null,
 	email varchar(30) not null,
-	--posição varchar(20) not null,
+	cpf char(11) not null,
+	nome_responsavel varchar(30) null,
+	cpf_responsavel char(11) null,
+	telefone_responsavel varchar(20) not null,
 	nascimento date,
 	--altura decimal(3,2),
 	primary key(id),
-    foreign key(id_position) references position_(id_position)
+    foreign key(id_posicao) references posicao_(id_posicao)
 )default charset = utf8;
 
-create table position_(
-id_position int not null auto_increment,
-nome_position varchar(20) not null,
+create table posicao_(
+id_posicao int not null auto_increment,
+nome_posicao varchar(20) not null,
 --qtd_jogadores int(30) not null, QUal a necessidade ?
-posição varchar(20) not null,
-primary key(id_position)
+--posicao varchar(20) not null,
+primary key(id_posicao)
 );
 
 
