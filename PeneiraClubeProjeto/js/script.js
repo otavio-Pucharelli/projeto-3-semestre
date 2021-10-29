@@ -12,3 +12,13 @@ var slideIndex = 0;
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 3000); 
     }
+
+    function mascara_cpf(){
+        let cpf = document.getElementById('txtcpf')
+        if(cpf.ariaValueMax.length == 3 || cpf.ariaValcpueMax.length == 7){
+            cpf.value += '.'
+        }
+        if(cpf.value.length == 11){
+            cpf.value += '-'
+        }
+    }

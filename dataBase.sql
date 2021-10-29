@@ -7,8 +7,8 @@ use teste_ness;
 create table jogadores(
 	id int not null auto_increment,
     id_posicao int not null,
-	federado varchar(50) not null, --sim ou não?
-	clube_federado varchar(100) null,
+	-- federado varchar(50) not null, --sim ou não?
+	-- clube_federado varchar(100) null,
 	nome varchar(40) not null,
 	email varchar(30) not null,
 	cpf char(11) not null,

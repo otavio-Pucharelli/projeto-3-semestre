@@ -3,6 +3,8 @@ body{
   margin: 0;
   padding: 0;
   height: 100% ;
+  /* background-image: url(https://cdn.pixabay.com/photo/2014/10/14/20/24/soccer-488700_960_720.jpg); */
+  /* background-repeat: no-repeat; */
 }
 footer{
     background-color: #f5f5f5;
@@ -21,8 +23,8 @@ nav{
 }
 
 header{
-  /* background-color: rgba(51, 51, 51, 0.993); */
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.938);
+  /* background-color: #333; */
   /* opacity : 0.5; */
 }
 
@@ -31,9 +33,9 @@ ul {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0);
     width: 500px;
-    text-shadow: 0px 0px 2px #EF5B00;
+    /* text-shadow: 0px 0px 2px whitesmoke; */
     /* opacity : 0.5; */
   }
   
@@ -61,6 +63,21 @@ ul {
       float: right;
   }
 
+  /* pagina sobre */
+  .about {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+
+  /* outra coisa */
   .form{
     /* float: Inline block margin 0 auto; */
     display: flex;
