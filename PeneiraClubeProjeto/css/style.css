@@ -7,10 +7,11 @@ body{
   /* background-repeat: no-repeat; */
 }
 footer{
-    background-color: #f5f5f5;
+    background-color: #333;
+    color: white;
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: 50px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -23,7 +24,8 @@ nav{
 }
 
 header{
-  background-color: rgba(51, 51, 51, 0.938);
+    background-color: #333;
+    padding: 9px;
   /* background-color: #333; */
   /* opacity : 0.5; */
 }
@@ -33,7 +35,7 @@ ul {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(51, 51, 51, 0);
+    background-color: #333;
     width: 500px;
     /* text-shadow: 0px 0px 2px whitesmoke; */
     /* opacity : 0.5; */
@@ -67,13 +69,16 @@ ul {
   .about {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
+    background-color: #333;
     color: white;
   }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
+    background-color: #333;
+    box-shadow: 0 4px 8px 0 ;
+    margin: 8px auto;
+    /* width: 50px; */
+    /* margin: 0 auto; */
   }
 
 
