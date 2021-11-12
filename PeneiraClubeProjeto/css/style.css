@@ -6,6 +6,9 @@ body{
   /* background-image: url(https://cdn.pixabay.com/photo/2014/10/14/20/24/soccer-488700_960_720.jpg); */
   /* background-repeat: no-repeat; */
 }
+ 
+/* Laranja do logo: #EF5B00 */
+
 footer{
     background-color: #333;
     color: white;
@@ -56,6 +59,10 @@ ul {
   li a:hover:not(.active) {
     background-color: #111;
   }
+
+  #googleForms{
+    margin-left: 23%;
+  }
   
   .active {
     background-color: #4CAF50;
@@ -69,20 +76,36 @@ ul {
   .about {
     padding: 50px;
     text-align: center;
-    background-color: #333;
+    background-color: #EF5B00;
     color: white;
   }
 
+  /* ====================CARD=============================== */
+
 .card {
-    background-color: #333;
-    box-shadow: 0 4px 8px 0 ;
+    /* background-color: #333; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 8px auto;
+    transition: 0.3s;
     /* width: 50px; */
     /* margin: 0 auto; */
   }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.281);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
 
 
-  /* outra coisa */
+
+
+
+  /* Formulário */
   .form{
     /* float: Inline block margin 0 auto; */
     display: flex;
@@ -192,6 +215,91 @@ ul {
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+/* ======================Portfolio Jogadores=============================== */
+#portfolio .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 123, 0, 0.678);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+.portfolio-modal .modal-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.portfolio-modal .modal-content p.item-intro {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
 }
 
 /* Fading animation */
