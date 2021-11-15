@@ -19,20 +19,34 @@ footer{
     bottom: 0;
     left: 0;
 }
-nav{
+navbar{
     /* background-color: black; */
     /* color: white; */
     /* height: 450px; */
     /* width: 200px; */
-    position: fixed;
+    top: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.sticky + .content {
+  padding-top: 60px;
+}
+.main{
+  z-index: 1;
+}
 header{
     background-color: #333;
     padding: 9px;
     display: block;
     width: 100%;
-    position: fixed;
   /* background-color: #333; */
   /* opacity : 0.5; */
 }
@@ -240,6 +254,10 @@ ul {
   display: block;
   margin: 0 auto;
 }
+#navigation{
+  position: -webkit-sticky;
+  position: sticky;
+}
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
@@ -319,4 +337,11 @@ ul {
   display: block;
 }
 
+.fa-circle{
+  color:#EF5B00;
+}
 
+
+.btn{
+  background-color: #333333;
+}
