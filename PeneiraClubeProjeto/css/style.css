@@ -19,7 +19,7 @@ footer{
     bottom: 0;
     left: 0;
 }
-navbar{
+.navbar{
     /* background-color: black; */
     /* color: white; */
     /* height: 450px; */
@@ -29,18 +29,24 @@ navbar{
   position: fixed;
   z-index: 2;
   width: 100%;
+  opacity: 2.0;
+}
+a:hover{
+  color:#EF5B00 
+}
+li a:active{
+  color: #fff;
 }
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  font-size: 0.9em;
+  transition: 0.5s;
 }
 
 .sticky + .content {
   padding-top: 60px;
-}
-.main{
-  z-index: 1;
 }
 header{
     background-color: #333;
@@ -73,10 +79,11 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: 0.3s;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    color:#EF5B00;
   }
 
   #googleForms{
@@ -250,8 +257,7 @@ ul {
   margin-right: auto;
 }
 #portfolio .portfolio-item .portfolio-link {
-  position: relative;
-  display: block;
+  position: justify;
   margin: 0 auto;
 }
 #navigation{
@@ -333,10 +339,15 @@ ul {
 }
 
 .img-fluid{
-  position: relative;
+  transition: 0.3s ;
+  position: static;
+  z-index: -1;
   display: block;
 }
-
+.img-fluid:hover{
+  opacity: 0.5;
+  z-index: -1;
+}
 .fa-circle{
   color:#EF5B00;
 }
@@ -344,4 +355,37 @@ ul {
 
 .btn{
   background-color: #333333;
+  transition: 0.3s;
 }
+.btn:hover{
+  color: #EF5B00;
+}
+
+.img__wrap {
+  position: relative;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+
